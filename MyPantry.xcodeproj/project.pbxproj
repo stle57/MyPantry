@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D473D011576DF69002E1102 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D473D001576DF69002E1102 /* libsqlite3.dylib */; };
+		4D5BC3531576C2E9005FAD11 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BC3521576C2E9005FAD11 /* Item.m */; };
+		4D5BC3561576C56B005FAD11 /* myPantry.sql in Resources */ = {isa = PBXBuildFile; fileRef = 4D5BC3541576C56B005FAD11 /* myPantry.sql */; };
+		4D5BC3571576C56B005FAD11 /* myPantryInserts.sql in Resources */ = {isa = PBXBuildFile; fileRef = 4D5BC3551576C56B005FAD11 /* myPantryInserts.sql */; };
+		4D5BC35A1576C6BC005FAD11 /* SubCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BC3591576C6BC005FAD11 /* SubCategory.m */; };
+		4D80B67115756A11002D5647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D80B67015756A11002D5647 /* UIKit.framework */; };
+		4D80B67315756A11002D5647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D80B67215756A11002D5647 /* Foundation.framework */; };
+		4D80B67515756A11002D5647 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D80B67415756A11002D5647 /* CoreGraphics.framework */; };
+		4D80B67B15756A11002D5647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D80B67915756A11002D5647 /* InfoPlist.strings */; };
+		4D80B67D15756A11002D5647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D80B67C15756A11002D5647 /* main.m */; };
+		4D80B68115756A11002D5647 /* MyPantryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D80B68015756A11002D5647 /* MyPantryAppDelegate.m */; };
+		4D80B68415756A11002D5647 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D80B68215756A11002D5647 /* MainStoryboard.storyboard */; };
+		4D80B68715756A11002D5647 /* MyPantryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D80B68615756A11002D5647 /* MyPantryViewController.m */; };
+		4D80B68F15756A12002D5647 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D80B68E15756A12002D5647 /* SenTestingKit.framework */; };
+		4D80B69015756A12002D5647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D80B67015756A11002D5647 /* UIKit.framework */; };
+		4D80B69115756A12002D5647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D80B67215756A11002D5647 /* Foundation.framework */; };
+		4D80B69915756A12002D5647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D80B69715756A12002D5647 /* InfoPlist.strings */; };
+		4D80B69C15756A12002D5647 /* MyPantryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D80B69B15756A12002D5647 /* MyPantryTests.m */; };
+		4D80B6AB157575AC002D5647 /* SubCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D80B6AA157575AC002D5647 /* SubCategoryTableViewController.m */; };
+		4D80B6B215758CFA002D5647 /* AddItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D80B6B115758CFA002D5647 /* AddItemTableViewController.m */; };
+		4DAD1316157815B5002FC16C /* myPantry.db in Resources */ = {isa = PBXBuildFile; fileRef = 4DAD1315157815B5002FC16C /* myPantry.db */; };
+		4DAD131915790DAE002FC16C /* SubCategoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD131715790DAE002FC16C /* SubCategoryHeaderView.m */; };
+		4DAD131C15790DCE002FC16C /* SubCategoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD131B15790DCE002FC16C /* SubCategoryInfo.m */; };
+		4DAD13201579100F002FC16C /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD131F1579100F002FC16C /* ItemCell.m */; };
+		4DAD132315791021002FC16C /* HighlightingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD132115791021002FC16C /* HighlightingTextView.m */; };
+		4DAD1325157912D8002FC16C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAD1324157912D8002FC16C /* QuartzCore.framework */; };
+		4DAD1327157912DF002FC16C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAD1326157912DF002FC16C /* MessageUI.framework */; };
+		4DAD132A15793421002FC16C /* carat.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DAD132915793421002FC16C /* carat.png */; };
+		4DAD132C1579342C002FC16C /* carat-open.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DAD132B1579342C002FC16C /* carat-open.png */; };
+		4DB25597157D628D003A42F1 /* WeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB25596157D628D003A42F1 /* WeightCell.m */; };
+		4DB2559B157D629A003A42F1 /* BrandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2559A157D629A003A42F1 /* BrandCell.m */; };
+		4DB2559E157D62AB003A42F1 /* ExpirationDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2559D157D62AB003A42F1 /* ExpirationDateCell.m */; };
+		4DB255A1157D62CF003A42F1 /* QuantityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB255A0157D62CF003A42F1 /* QuantityCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D80B69215756A12002D5647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D80B66315756A11002D5647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D80B66B15756A11002D5647;
+			remoteInfo = MyPantry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D473D001576DF69002E1102 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4D5BC3511576C2E9005FAD11 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		4D5BC3521576C2E9005FAD11 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		4D5BC3541576C56B005FAD11 /* myPantry.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myPantry.sql; path = ../myPantry.sql; sourceTree = "<group>"; };
+		4D5BC3551576C56B005FAD11 /* myPantryInserts.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myPantryInserts.sql; path = ../myPantryInserts.sql; sourceTree = "<group>"; };
+		4D5BC3581576C6BC005FAD11 /* SubCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategory.h; sourceTree = "<group>"; };
+		4D5BC3591576C6BC005FAD11 /* SubCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategory.m; sourceTree = "<group>"; };
+		4D80B66C15756A11002D5647 /* MyPantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D80B67015756A11002D5647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4D80B67215756A11002D5647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4D80B67415756A11002D5647 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4D80B67815756A11002D5647 /* MyPantry-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyPantry-Info.plist"; sourceTree = "<group>"; };
+		4D80B67A15756A11002D5647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D80B67C15756A11002D5647 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D80B67E15756A11002D5647 /* MyPantry-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPantry-Prefix.pch"; sourceTree = "<group>"; };
+		4D80B67F15756A11002D5647 /* MyPantryAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPantryAppDelegate.h; sourceTree = "<group>"; };
+		4D80B68015756A11002D5647 /* MyPantryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPantryAppDelegate.m; sourceTree = "<group>"; };
+		4D80B68315756A11002D5647 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4D80B68515756A11002D5647 /* MyPantryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPantryViewController.h; sourceTree = "<group>"; };
+		4D80B68615756A11002D5647 /* MyPantryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPantryViewController.m; sourceTree = "<group>"; };
+		4D80B68D15756A12002D5647 /* MyPantryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPantryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D80B68E15756A12002D5647 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4D80B69615756A12002D5647 /* MyPantryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyPantryTests-Info.plist"; sourceTree = "<group>"; };
+		4D80B69815756A12002D5647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D80B69A15756A12002D5647 /* MyPantryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPantryTests.h; sourceTree = "<group>"; };
+		4D80B69B15756A12002D5647 /* MyPantryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPantryTests.m; sourceTree = "<group>"; };
+		4D80B6A9157575AC002D5647 /* SubCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategoryTableViewController.h; sourceTree = "<group>"; };
+		4D80B6AA157575AC002D5647 /* SubCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategoryTableViewController.m; sourceTree = "<group>"; };
+		4D80B6B015758CFA002D5647 /* AddItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemTableViewController.h; sourceTree = "<group>"; };
+		4D80B6B115758CFA002D5647 /* AddItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemTableViewController.m; sourceTree = "<group>"; };
+		4DA42E5B1577CED30066EE82 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4DAD1315157815B5002FC16C /* myPantry.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = myPantry.db; path = ../myPantry.db; sourceTree = "<group>"; };
+		4DAD131715790DAE002FC16C /* SubCategoryHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategoryHeaderView.m; sourceTree = "<group>"; };
+		4DAD131815790DAE002FC16C /* SubCategoryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategoryHeaderView.h; sourceTree = "<group>"; };
+		4DAD131A15790DCE002FC16C /* SubCategoryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategoryInfo.h; sourceTree = "<group>"; };
+		4DAD131B15790DCE002FC16C /* SubCategoryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategoryInfo.m; sourceTree = "<group>"; };
+		4DAD131E1579100F002FC16C /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		4DAD131F1579100F002FC16C /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		4DAD132115791021002FC16C /* HighlightingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightingTextView.m; sourceTree = "<group>"; };
+		4DAD132215791021002FC16C /* HighlightingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightingTextView.h; sourceTree = "<group>"; };
+		4DAD1324157912D8002FC16C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4DAD1326157912DF002FC16C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4DAD132915793421002FC16C /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
+		4DAD132B1579342C002FC16C /* carat-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "carat-open.png"; sourceTree = "<group>"; };
+		4DB25595157D628D003A42F1 /* WeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCell.h; sourceTree = "<group>"; };
+		4DB25596157D628D003A42F1 /* WeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightCell.m; sourceTree = "<group>"; };
+		4DB25599157D629A003A42F1 /* BrandCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandCell.h; sourceTree = "<group>"; };
+		4DB2559A157D629A003A42F1 /* BrandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandCell.m; sourceTree = "<group>"; };
+		4DB2559C157D62AB003A42F1 /* ExpirationDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpirationDateCell.h; sourceTree = "<group>"; };
+		4DB2559D157D62AB003A42F1 /* ExpirationDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpirationDateCell.m; sourceTree = "<group>"; };
+		4DB2559F157D62CE003A42F1 /* QuantityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuantityCell.h; sourceTree = "<group>"; };
+		4DB255A0157D62CF003A42F1 /* QuantityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuantityCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D80B66915756A11002D5647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DAD1327157912DF002FC16C /* MessageUI.framework in Frameworks */,
+				4DAD1325157912D8002FC16C /* QuartzCore.framework in Frameworks */,
+				4D473D011576DF69002E1102 /* libsqlite3.dylib in Frameworks */,
+				4D80B67115756A11002D5647 /* UIKit.framework in Frameworks */,
+				4D80B67315756A11002D5647 /* Foundation.framework in Frameworks */,
+				4D80B67515756A11002D5647 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D80B68915756A12002D5647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D80B68F15756A12002D5647 /* SenTestingKit.framework in Frameworks */,
+				4D80B69015756A12002D5647 /* UIKit.framework in Frameworks */,
+				4D80B69115756A12002D5647 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D5BC34F1576C29A005FAD11 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D5BC3511576C2E9005FAD11 /* Item.h */,
+				4D5BC3521576C2E9005FAD11 /* Item.m */,
+				4D5BC3581576C6BC005FAD11 /* SubCategory.h */,
+				4D5BC3591576C6BC005FAD11 /* SubCategory.m */,
+				4DA42E5B1577CED30066EE82 /* Constants.h */,
+			);
+			path = "Model Classes";
+			sourceTree = "<group>";
+		};
+		4D80B66115756A11002D5647 = {
+			isa = PBXGroup;
+			children = (
+				4D80B67615756A11002D5647 /* MyPantry */,
+				4D80B69415756A12002D5647 /* MyPantryTests */,
+				4D80B66F15756A11002D5647 /* Frameworks */,
+				4D80B66D15756A11002D5647 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D80B66D15756A11002D5647 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D80B66C15756A11002D5647 /* MyPantry.app */,
+				4D80B68D15756A12002D5647 /* MyPantryTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D80B66F15756A11002D5647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DAD1326157912DF002FC16C /* MessageUI.framework */,
+				4DAD1324157912D8002FC16C /* QuartzCore.framework */,
+				4D473D001576DF69002E1102 /* libsqlite3.dylib */,
+				4D80B67015756A11002D5647 /* UIKit.framework */,
+				4D80B67215756A11002D5647 /* Foundation.framework */,
+				4D80B67415756A11002D5647 /* CoreGraphics.framework */,
+				4D80B68E15756A12002D5647 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D80B67615756A11002D5647 /* MyPantry */ = {
+			isa = PBXGroup;
+			children = (
+				4DAD132815793406002FC16C /* Resources */,
+				4DAD131D15790FDF002FC16C /* Cells */,
+				4DAD131715790DAE002FC16C /* SubCategoryHeaderView.m */,
+				4DAD131A15790DCE002FC16C /* SubCategoryInfo.h */,
+				4DAD131B15790DCE002FC16C /* SubCategoryInfo.m */,
+				4DAD131815790DAE002FC16C /* SubCategoryHeaderView.h */,
+				4D5BC34F1576C29A005FAD11 /* Model Classes */,
+				4D80B67F15756A11002D5647 /* MyPantryAppDelegate.h */,
+				4D80B68015756A11002D5647 /* MyPantryAppDelegate.m */,
+				4D80B68215756A11002D5647 /* MainStoryboard.storyboard */,
+				4D80B6B015758CFA002D5647 /* AddItemTableViewController.h */,
+				4D80B6B115758CFA002D5647 /* AddItemTableViewController.m */,
+				4D80B6A9157575AC002D5647 /* SubCategoryTableViewController.h */,
+				4D80B6AA157575AC002D5647 /* SubCategoryTableViewController.m */,
+				4D80B68515756A11002D5647 /* MyPantryViewController.h */,
+				4D80B68615756A11002D5647 /* MyPantryViewController.m */,
+				4D80B67715756A11002D5647 /* Supporting Files */,
+			);
+			path = MyPantry;
+			sourceTree = "<group>";
+		};
+		4D80B67715756A11002D5647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DAD1315157815B5002FC16C /* myPantry.db */,
+				4D5BC3541576C56B005FAD11 /* myPantry.sql */,
+				4D5BC3551576C56B005FAD11 /* myPantryInserts.sql */,
+				4D80B67815756A11002D5647 /* MyPantry-Info.plist */,
+				4D80B67915756A11002D5647 /* InfoPlist.strings */,
+				4D80B67C15756A11002D5647 /* main.m */,
+				4D80B67E15756A11002D5647 /* MyPantry-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D80B69415756A12002D5647 /* MyPantryTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D80B69A15756A12002D5647 /* MyPantryTests.h */,
+				4D80B69B15756A12002D5647 /* MyPantryTests.m */,
+				4D80B69515756A12002D5647 /* Supporting Files */,
+			);
+			path = MyPantryTests;
+			sourceTree = "<group>";
+		};
+		4D80B69515756A12002D5647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D80B69615756A12002D5647 /* MyPantryTests-Info.plist */,
+				4D80B69715756A12002D5647 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DAD131D15790FDF002FC16C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4DAD132115791021002FC16C /* HighlightingTextView.m */,
+				4DAD132215791021002FC16C /* HighlightingTextView.h */,
+				4DAD131E1579100F002FC16C /* ItemCell.h */,
+				4DB25595157D628D003A42F1 /* WeightCell.h */,
+				4DB25596157D628D003A42F1 /* WeightCell.m */,
+				4DB25599157D629A003A42F1 /* BrandCell.h */,
+				4DB2559A157D629A003A42F1 /* BrandCell.m */,
+				4DB2559C157D62AB003A42F1 /* ExpirationDateCell.h */,
+				4DB2559F157D62CE003A42F1 /* QuantityCell.h */,
+				4DB255A0157D62CF003A42F1 /* QuantityCell.m */,
+				4DB2559D157D62AB003A42F1 /* ExpirationDateCell.m */,
+				4DAD131F1579100F002FC16C /* ItemCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4DAD132815793406002FC16C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4DAD132915793421002FC16C /* carat.png */,
+				4DAD132B1579342C002FC16C /* carat-open.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D80B66B15756A11002D5647 /* MyPantry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D80B69F15756A12002D5647 /* Build configuration list for PBXNativeTarget "MyPantry" */;
+			buildPhases = (
+				4D80B66815756A11002D5647 /* Sources */,
+				4D80B66915756A11002D5647 /* Frameworks */,
+				4D80B66A15756A11002D5647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPantry;
+			productName = MyPantry;
+			productReference = 4D80B66C15756A11002D5647 /* MyPantry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D80B68C15756A12002D5647 /* MyPantryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D80B6A215756A12002D5647 /* Build configuration list for PBXNativeTarget "MyPantryTests" */;
+			buildPhases = (
+				4D80B68815756A12002D5647 /* Sources */,
+				4D80B68915756A12002D5647 /* Frameworks */,
+				4D80B68A15756A12002D5647 /* Resources */,
+				4D80B68B15756A12002D5647 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D80B69315756A12002D5647 /* PBXTargetDependency */,
+			);
+			name = MyPantryTests;
+			productName = MyPantryTests;
+			productReference = 4D80B68D15756A12002D5647 /* MyPantryTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D80B66315756A11002D5647 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4D80B66615756A11002D5647 /* Build configuration list for PBXProject "MyPantry" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4D80B66115756A11002D5647;
+			productRefGroup = 4D80B66D15756A11002D5647 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D80B66B15756A11002D5647 /* MyPantry */,
+				4D80B68C15756A12002D5647 /* MyPantryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D80B66A15756A11002D5647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D80B67B15756A11002D5647 /* InfoPlist.strings in Resources */,
+				4D80B68415756A11002D5647 /* MainStoryboard.storyboard in Resources */,
+				4D5BC3561576C56B005FAD11 /* myPantry.sql in Resources */,
+				4D5BC3571576C56B005FAD11 /* myPantryInserts.sql in Resources */,
+				4DAD1316157815B5002FC16C /* myPantry.db in Resources */,
+				4DAD132A15793421002FC16C /* carat.png in Resources */,
+				4DAD132C1579342C002FC16C /* carat-open.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D80B68A15756A12002D5647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D80B69915756A12002D5647 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D80B68B15756A12002D5647 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D80B66815756A11002D5647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D80B67D15756A11002D5647 /* main.m in Sources */,
+				4D80B68115756A11002D5647 /* MyPantryAppDelegate.m in Sources */,
+				4D80B68715756A11002D5647 /* MyPantryViewController.m in Sources */,
+				4D80B6AB157575AC002D5647 /* SubCategoryTableViewController.m in Sources */,
+				4D80B6B215758CFA002D5647 /* AddItemTableViewController.m in Sources */,
+				4D5BC3531576C2E9005FAD11 /* Item.m in Sources */,
+				4D5BC35A1576C6BC005FAD11 /* SubCategory.m in Sources */,
+				4DAD131915790DAE002FC16C /* SubCategoryHeaderView.m in Sources */,
+				4DAD131C15790DCE002FC16C /* SubCategoryInfo.m in Sources */,
+				4DAD13201579100F002FC16C /* ItemCell.m in Sources */,
+				4DAD132315791021002FC16C /* HighlightingTextView.m in Sources */,
+				4DB25597157D628D003A42F1 /* WeightCell.m in Sources */,
+				4DB2559B157D629A003A42F1 /* BrandCell.m in Sources */,
+				4DB2559E157D62AB003A42F1 /* ExpirationDateCell.m in Sources */,
+				4DB255A1157D62CF003A42F1 /* QuantityCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D80B68815756A12002D5647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D80B69C15756A12002D5647 /* MyPantryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D80B69315756A12002D5647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D80B66B15756A11002D5647 /* MyPantry */;
+			targetProxy = 4D80B69215756A12002D5647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D80B67915756A11002D5647 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D80B67A15756A11002D5647 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4D80B68215756A11002D5647 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D80B68315756A11002D5647 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		4D80B69715756A12002D5647 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D80B69815756A12002D5647 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D80B69D15756A12002D5647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4D80B69E15756A12002D5647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D80B6A015756A12002D5647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyPantry/MyPantry-Prefix.pch";
+				INFOPLIST_FILE = "MyPantry/MyPantry-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4D80B6A115756A12002D5647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyPantry/MyPantry-Prefix.pch";
+				INFOPLIST_FILE = "MyPantry/MyPantry-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4D80B6A315756A12002D5647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyPantry.app/MyPantry";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyPantry/MyPantry-Prefix.pch";
+				INFOPLIST_FILE = "MyPantryTests/MyPantryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4D80B6A415756A12002D5647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyPantry.app/MyPantry";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyPantry/MyPantry-Prefix.pch";
+				INFOPLIST_FILE = "MyPantryTests/MyPantryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D80B66615756A11002D5647 /* Build configuration list for PBXProject "MyPantry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D80B69D15756A12002D5647 /* Debug */,
+				4D80B69E15756A12002D5647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D80B69F15756A12002D5647 /* Build configuration list for PBXNativeTarget "MyPantry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D80B6A015756A12002D5647 /* Debug */,
+				4D80B6A115756A12002D5647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D80B6A215756A12002D5647 /* Build configuration list for PBXNativeTarget "MyPantryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D80B6A315756A12002D5647 /* Debug */,
+				4D80B6A415756A12002D5647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D80B66315756A11002D5647 /* Project object */;
+}
